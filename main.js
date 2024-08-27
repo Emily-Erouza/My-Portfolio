@@ -11,9 +11,7 @@ $('.showhide-nav').click(()=>{
    $(".search-input").toggle()
 })
 
-// $("body").click(()=>{
-//     $(".warning").toggle()
-// })
+
 
 $("#dark-light").click(()=>{
 $(".nav-bar").toggleClass("light")

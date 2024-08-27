@@ -93,35 +93,29 @@
 
 /* yyy */
 .dark {
-  background-color: rgba(0, 0, 0, 0.817);
+  background-color: rgba(15, 15, 15, 0.817);
+
 }
 .light {
-  background-color: rgb(255, 255, 255);
-  /* border: 3px solid black; */
+  background-color: rgb(235, 223, 223);
+ 
   color: #000;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.275);
 }
 
 .light > div {
-  color: rgb(160, 32, 32);
+  color: rgb(46, 43, 43);
 }
 .nav-bar {
+  
   display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 10px;
-  width: fit-content;
-  height: 100%;
   gap: 15px;
-  margin: 0px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px 20px 20px 0px;
-  z-index: 1;
+
 }
 .nav-item {
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: rgb(133, 194, 218);
   display: flex;
   flex-basis: 50px;
   width: fit-content;
@@ -133,9 +127,12 @@
   gap: 15px;
 }
 .nav-title {
-  background-color: rgb(30, 114, 194);
+
   display: flex;
-  border-radius: 25px;
+  height: 20%;
+  width: 15%;
+  border-radius: 7%;
+  transition: 0.8s;
 }
 .cl-logo {
   background-color: rgb(243, 240, 245);
@@ -157,42 +154,44 @@
   border: 0px none white;
 }
 
-.line {
-  background-color: white;
-  width: 100%;
-  height: 1px;
-}
+
 .nav-bar :hover {
-  background-color: gray;
+  background-color: rgb(121, 118, 105);
 }
 
 .showhide-nav {
-  background-color: rgb(217, 187, 231);
+  background-color: rgb(75, 179, 211);
   width: 40px;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   position: relative;
-  left: 90%;
-  border-radius: 20%;
+  left: 86%;
+  border-radius: 100%;
+  border: 2px solid rgb(76, 224, 143);
+  padding: 10px;
+  border-radius: 25px;
 }
 .nav-paragraph {
   padding: 0px;
   width: 150px;
+  color: black;
 }
 
 .toggle {
   display: flex;
   flex-basis: 50px;
   width: fit-content;
-  border-radius: 15px;
+  border-radius: 25px;
   gap: 15px;
-  align-items: center;
-  justify-content: center;
+
+}
+#title{
+  color:white;
 }
 
 header {
-  background-image: url("https://images.unsplash.com/photo-1514171933653-2c8955139b77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2ff6c43b7d7385e86b70f6425b318e3&auto=format&fit=crop&w=500&q=60");
+  background-image:url("https://images.unsplash.com/photo-1514171933653-2c8955139b77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2ff6c43b7d7385e86b70f6425b318e3&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 400px;
@@ -242,9 +241,7 @@ header .container {
 .fa-github:hover {
   color: #121213;
 }
-.fa-youtube-play:hover {
-  color: red !important;
-}
+
 
 .fa-linkedin-square:hover {
   color: #2777f1;
@@ -258,8 +255,12 @@ footer .footer-a {
 }
 
 @media (min-width: 400px) {
-  .navbar-expand .navbar-collapse {
-    display: flex !important;
+ .main-nav {
+  
+  float: right;
+  display: block;
+    
+  
   }
 }
 .about-section {
@@ -272,7 +273,7 @@ h2 {
   color: #0d3068;
   text-align: center;
   padding: 10px;
-  /* #box-shadow: 2px 2px 15px #0d3068; */
+ 
 }
 
 header h3 {
@@ -281,32 +282,7 @@ header h3 {
   font-family: "Garamond";
 }
 
-/* .navbar {
-    background: #0d3068;
-    box-shadow: 0px 5px 15px #d1a9be;
-  }
-  
-  .navbar-brand {
-    color: white;
-    margin: 2px;
-    padding: 2px;
-  }
-  
-  .navbar-brand:hover {
-    color: #e5d3c7;
-  }
-  
-  .nav-link {
-    color: white;
-    padding: 2px
-  }
-  
-  .nav-link:hover {
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
-  }
-   */
+
 .headings {
   padding: 30px;
   font-weight: 700;
@@ -382,6 +358,12 @@ p {
   transform: scale(1.05);
   transition: 0.8s ease-in-out;
 }
+
+
+
+
+
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .semi-important {
